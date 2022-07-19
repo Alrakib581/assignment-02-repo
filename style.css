@@ -174,3 +174,10 @@ hr{
     font-family: 'Poppins',sans-serif;
 }
 /*========= footer container end  ==========*/
+/*=============================== style for upcomming.html  =================================================*/
+.upcoming-card-container{
+    width: 312px;
+    height: 242px;
+    border: 1px solid #dddddd;
+}
+/*=============================== style for upcomming.html  =================================================*/
