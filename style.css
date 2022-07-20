@@ -4,20 +4,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .container {
     margin: 0 auto;
     width: 1320px;
 }
-
 header {
-    height: 40px;
-    
+    height: 40px;   
 }
 .section-tablet{
     display: none;
 }
-
 /*=========== common css end  ===========*/
 /*========== banner section start  ==========*/
 #banner-section {
@@ -28,28 +24,24 @@ header {
     align-items: center;
     justify-content: center;
     border-radius: 30px;
-    color: aliceblue;
 }
-
 .banner-text {
     width: 532px;
     height: 424px;
     margin-right: 24px;
 }
-
 .banner-text h1 {
     font-size: 60px;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
-
 .banner-text>p {
     font-size: 16px;
+    color: #EC255A;
     font-family: 'Poppins', sans-serif;
     line-height: 26px;
 }
-
 .banner-btn>button {
     width: 187px;
     height: 56px;
@@ -58,18 +50,15 @@ header {
     font-size: 20px;
     font-family: 'Abel', sans-serif;
     border-radius: 5px;
-    background-color: #dd0000;
+    background-color: #EC255A;
     color: #ffffff;
     transition: all 0.8s;
 }
-
 .banner-btn>button:hover {
     border: 1px solid #dd0000;
     background-color: #161616;
     cursor: pointer;
-
 }
-
 .banner-image {
     width: 581px;
     height: 612px;
@@ -89,21 +78,18 @@ header {
     margin-bottom: 130px;
     display: flex;
 }
-
 .nav-menu {
     width: 312px;
     height: 312px;
     background-color: #161616;
     border-radius: 10px;
 }
-
 .nav-menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 .nav-menu .nav-btn {
     width: 252px;
     height: 64px;
@@ -117,7 +103,7 @@ header {
 }
 
 .nav-menu .nav-active {
-    background-color: #dd0000;
+    background-color: #EC255A;
     color: #ffffff;
     transition: all 0.5s;
 }
@@ -145,6 +131,9 @@ header {
 .card-btn>button {
     width: 100px;
     height: 32px;
+    border: 1px solid #EC255A;
+    background: transparent;
+    border-radius: 10px;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     margin: 20px 0px 20px 20px;
@@ -174,7 +163,7 @@ header {
 }
 
 .goal>h4 {
-    color: #ffffff;
+    color: #EC255A;
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -237,7 +226,6 @@ hr {
     align-items: center;
     margin-bottom: 30px;
 
-
 }
 
 .card-img-flag .card-vs {
@@ -246,9 +234,9 @@ hr {
 }
 
 .card-vs>p {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Poppins', sans-serif;
-    color: #dd0000;
+    color: #EC255A;
 
 }
 
@@ -268,9 +256,10 @@ hr {
 
 /*=============================== style for upcomming.html end  =================================================*/
 /*===================================== css media query start  ==========================================*/
+/*================= style for mobile  =====================*/
 @media only screen and (max-width:480px) {
 
-    /* css utilites  */
+    /* css common style  */
     .container {
         width: 100%;
     }
@@ -279,7 +268,7 @@ hr {
         height: 30px;
     }
 
-    /* css utilites  */
+    /* css common style  */
     /*========== banner section start  ==========*/
     #banner-section {
         width: 90%;
@@ -291,16 +280,14 @@ hr {
 
     .banner-text {
         width: 100%;
-        /* height: 424px; */
         margin-right: 0px;
         padding: 0px 20px;
-        /* margin-right: 24px; */
     }
 
     .banner-text h1 {
         font-size: 30px;
         text-align: center;
-        margin-top: 30px;
+        margin-top: 40px;
 
     }
 
@@ -320,12 +307,6 @@ hr {
         height: 40px;
         margin-top: 30px;
         border: none;
-        font-size: 20px;
-        font-family: 'Abel', sans-serif;
-        border-radius: 5px;
-        background-color: #dd0000;
-        color: #ffffff;
-        transition: all 0.8s;
 
     }
 
@@ -353,17 +334,14 @@ hr {
 
     .nav-menu {
         width: 100%;
-        height: 312px;
-        background-color: #B9B9B9;
-        border-radius: 10px;
-    }
-
-    .nav-menu {
-        display: flex;
+        /* height: 312px; */
+        background-color: rgba(0.1, 0.1, 0.1, 0.1);
+        /* display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
     }
+    
 
     .nav-menu .nav-btn {
         width: 90%;
@@ -374,7 +352,7 @@ hr {
     }
 
     .card-main-container {
-        display: grid;
+        /* display: grid; */
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
         margin-left: 0px;
@@ -384,8 +362,8 @@ hr {
     .card-container {
         width: 100%;
         height: auto;
-        border-radius: 10px;
-        border: 1px solid #dddddd;
+        /* border-radius: 10px; */
+        /* border: 1px solid #dddddd; */
     }
 
     .card-img>img {
@@ -403,7 +381,7 @@ hr {
     .goal>h4 {
         color: #ffffff;
         font-size: 22px;
-        font-family: 'Poppins', sans-serif;
+        /* font-family: 'Poppins', sans-serif; */
         text-align: center;
         padding-top: 70px;
     }
@@ -411,7 +389,7 @@ hr {
     hr {
         width: 90%;
         margin: 0 auto;
-        opacity: 0.4;
+        /* opacity: 0.4; */
         margin-top: 50px;
     }
 
@@ -420,21 +398,21 @@ hr {
     }
 
     .terms ul li {
-        list-style-type: none;
+        /* list-style-type: none; */
         display: block;
         margin: 25px;
     }
 
     .terms ul li a {
-        color: #B9B9B9;
-        text-decoration: none;
+        /* color: #B9B9B9; */
+        /* text-decoration: none; */
         font-size: 14px;
-        font-family: 'Poppins', sans-serif;
+        /* font-family: 'Poppins', sans-serif; */
     }
 
     .social-icon {
         font-size: 30px;
-        color: #B9B9B9;
+        /* color: #B9B9B9; */
         margin: 0px 10px;
         margin-bottom: 20px;
     }
@@ -456,8 +434,8 @@ hr {
     }
     .card-vs>p {
         font-size: 14px;
-        font-family: 'Poppins', sans-serif;
-        color: #dd0000;
+        /* font-family: 'Poppins', sans-serif; */
+        /* color: #dd0000; */
 
     }
 
@@ -467,10 +445,10 @@ hr {
 
     .card-up-footer {
         font-size: 16px;
-        font-family: 'Poppins', sans-serif;
-        color: #4D4D4D;
-        font-weight: 400;
-        margin-top: 10px;
+        /* font-family: 'Poppins', sans-serif; */
+        /* color: #4D4D4D; */
+        /* font-weight: 400; */
+        /* margin-top: 10px; */
     }
 
 }
