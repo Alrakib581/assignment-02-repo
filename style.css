@@ -51,7 +51,6 @@ header{
     transition: all 0.8s;
 }
 .banner-btn >button:hover{
-    font-family: 'Mina',sans-serif;
     border: 1px solid #dd0000;
     background-color: #161616;
     cursor: pointer;
@@ -151,7 +150,7 @@ header{
     font-size: 40px;
     font-family: 'Poppins',sans-serif;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 70px;
 }
 hr{
     width: 1200px;
@@ -173,11 +172,55 @@ hr{
     font-size: 16px;
     font-family: 'Poppins',sans-serif;
 }
+.social-icon-container{
+    text-align: center; 
+}
+.social-icon-container>a{
+    text-decoration: none;
+}
+.social-icon{
+    font-size: 30px;
+    color: #B9B9B9;
+    margin: 0px 20px;
+}
 /*========= footer container end  ==========*/
 /*=============================== style for upcomming.html  =================================================*/
 .upcoming-card-container{
     width: 312px;
     height: 242px;
     border: 1px solid #dddddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-img-flag{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  
+   
+}
+.card-img-flag .card-vs{
+    padding: 0px 15px;
+    
+}
+.card-vs>p{
+    font-size: 16px;
+    font-family: 'Poppins',sans-serif;
+    color: #dd0000;
+
+}
+.card-up-p>p{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins',sans-serif;
+}
+.card-up-footer{
+   font-size: 16px;
+   font-family: 'Poppins',sans-serif;
+   color: #4D4D4D;
+   font-weight: 400;
+   margin-top: 10px;
 }
 /*=============================== style for upcomming.html  =================================================*/
